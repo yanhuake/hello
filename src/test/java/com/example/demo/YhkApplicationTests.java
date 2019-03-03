@@ -11,7 +11,7 @@ public class YhkApplicationTests {
 
 	@Test
 	public void contextLoads() {
-		System.out.println("hello git");
+		System.out.println("hello git");   
 	}
 
 }
