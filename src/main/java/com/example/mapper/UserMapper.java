@@ -9,6 +9,6 @@ import org.apache.ibatis.annotations.Select;
 @Mapper
 @Resource(name="userMapper")
 public interface UserMapper {
-	@Select("SELECT COUNT(*) CNT FROM USERS WHERE UNAME=#{name} AND PWD=#{pwd}")
-	int hasUser(@Param("name")String username,@Param("pwd")String password);
+	@Select("SELECT COUNT(*) CNT FROM USERS WHERE UNAME=#{uname} AND PWD=#{pwd}")
+	int hasUser(@Param("uname")String uname,@Param("pwd")String pwd);
 }

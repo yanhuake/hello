@@ -12,7 +12,7 @@ public class UserServiceImpl implements UserService {
 	private UserMapper userMapper ;
 	
 	@Override
-	public int hasUser(String username,String password) {
-		return userMapper.hasUser(username, password) ;
+	public int hasUser(String uname,String pwd) {
+		return userMapper.hasUser(uname, pwd) ;
 	}
 }

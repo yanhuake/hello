@@ -15,8 +15,8 @@ public class UserController {
 	
 	@RequestMapping("/hasUser.do")
 	@ResponseBody
-	public int hasUser(String username,String password) {
-		System.out.println(username+"===="+password);
-		return userService.hasUser(username, password);
+	public int hasUser(String uname,String pwd) {
+		System.out.println(uname+"===="+pwd);
+		return userService.hasUser(uname, pwd);
 	}
 }
